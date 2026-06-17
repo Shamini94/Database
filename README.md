@@ -1,4 +1,4 @@
-#Tech Events & Meetups Platform
+# Tech Events & Meetups Platform
 
 ## Overview
   This project is a database-driven tech events & meetups management system that stores and organises information about meetups, workshops and community events. It allows users to track event details such as titles, descriptions, schedules, organisers, and venues, and supports querying and analysis of events using SQL.
