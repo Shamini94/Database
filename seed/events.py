@@ -51,8 +51,6 @@ def insert_events(cursor, events):
         """,
         values
     )
-
-
 def seed_events(connection):
     cursor = connection.cursor()
 
