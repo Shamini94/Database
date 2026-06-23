@@ -2,6 +2,7 @@ from db.connection import get_connection  # adjust to your project
 from seed.users import seed_users
 from seed.venues import seed_venues
 from seed.events import seed_events
+from seed.rsvps import seed_rsvps
 
 def seed():
     """Reset and seed the database."""
@@ -9,10 +10,12 @@ def seed():
 
     try:
         connection = get_connection()
+
         seed_users(connection)
         seed_venues(connection)
         seed_events(connection)
-
+        seed_rsvps(connection) 
+        
         print("Database seeded successfully")
 
     except Exception as e:
